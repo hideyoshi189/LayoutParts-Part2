@@ -3,10 +3,12 @@
 /* カード内の画像は以下のURLを使用して下さい */
 /* https://picsum.photos/id/1005/200/300 */
 
-.q9-1 {
+.FadeIn,.FadeOut,.Rolling {
   height: 200px;
   width: 200px;
   background-color: #76ff826b;
+}
+.FadeIn {
   animation-name: fadein;
   animation-fill-mode:backwards;
   animation-duration:4s;
@@ -24,10 +26,7 @@
   width: 100%;
   justify-content: center;
 }
-.q9-2 {
-  height: 200px;
-  width: 200px;
-  background-color: #76ff826b;
+.FadeOut {
   animation-name: fadein;
   animation-fill-mode:backwards;
   animation-duration:4s;
@@ -36,10 +35,7 @@
   animation-delay: 4s;
   animation-direction:reverse;
 }
-.q9-3 {
-  height: 200px;
-  width: 200px;
-  background-color: #76ff826b;
+.Rolling {
   display: inline-block;
   animation-name: roll;
   animation-fill-mode:none;
@@ -53,93 +49,44 @@
   0%{ transform: rotate(0); }
   100%{ transform: rotate(360deg); }
 }
-.q9-4 {
+.Change-Color,.Change-Roll,.Change-UpSlide,.Change-SideSlide,.Change-Grow,
+.Change-SideGrow,.Change-InBorder,.Change-Shadow {
   height: 200px;
   width: 200px;
   background-color: #331aefd0;
   display: inline-block;
   transition: all 0.5s;
 }
-.q9-4:hover {
+.Change-Color:hover {
   background: #ff27e2c9;
 }
-.q9-5 {
-  height: 200px;
-  width: 200px;
-  background-color: #331aefd0;
-  display: inline-block;
-  transition: all 0.5s;
-}
-.q9-5:hover {
+.Change-Roll:hover {
   transition:all 0.5s;
   transform: rotate(360deg);
 }
-.q9-6 {
-  height: 200px;
-  width: 200px;
-  background-color: #331aefd0;
-  display: inline-block;
-  transition: all 0.5s;
-}
-.q9-6:hover {
+.Change-UpSlide:hover {
   transform: translateY(-20%);
 }
-.q9-7 {
-  height: 200px;
-  width: 200px;
-  background-color: #331aefd0;
-  display: inline-block;
-  transition: all 0.5s;
-}
-.q9-7:hover {
+.Change-SideSlide:hover {
   transform: translateX(20%);
 }
-.q9-8 {
-  height: 200px;
-  width: 200px;
-  background-color: #331aefd0;
-  display: inline-block;
-  transition: all 0.5s;
-}
-.q9-8:hover {
+.Change-Grow:hover {
   height: 300px;
 }
-.q9-9 {
-  height: 200px;
-  width: 200px;
-  background-color: #331aefd0;
-  display: inline-block;
-  transition: all 0.5s;
-}
-.q9-9:hover {
+.Change-SideGrow:hover {
   width: 500px;
 }
-.q9-10 {
-  height: 200px;
-  width: 200px;
-  background-color: #331aefd0;
-  display: inline-block;
-  transition: all 0.5s;
-}
-.q9-10:hover {
+.Change-InBorder:hover {
   box-sizing: border-box;
   border: 10px #00ffe5 solid;
 }
-.q9-11 {
-  height: 200px;
-  width: 200px;
-  background-color: #331aefd0;
-  display: inline-block;
-  transition: all 0.5s;
-}
-.q9-11:hover {
+.Change-Shadow:hover {
   box-shadow:8px 11px 10px 3px #06031ed0;
 }
-.q9-12 {
+.Circle-Roll {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  /* box-sizing: border-box; */
   border: 10px solid;
   border-color: #14ff4bcd #ecf1f2 #ecf1f2 #ecf1f2;
   display: inline-block;
@@ -171,16 +118,17 @@ li:hover {
 li + li {
   border-left:none;
 }
-.box {
+.List-Box {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.q9-13 {
-  background-image: url(../../../q8/image/coffee-background.jpg);
+.Background-Image {
+  background-image: url(https://picsum.photos/id/1005/200/300);
   width: 150px;
   height: 150px;
   display: inline-block;
+  background-position: center;
   border-radius: 50%;
   margin-bottom: 20px;
 }
