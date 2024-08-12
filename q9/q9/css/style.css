@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-/* カード内の画像は以下のURLを使用して下さい */
-/* https://picsum.photos/id/1005/200/300 */
-
 .FadeIn,.FadeOut,.Rolling {
   height: 200px;
   width: 200px;
@@ -21,7 +18,7 @@
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-.yoko {
+.Row {
   display: flex;
   width: 100%;
   justify-content: center;
